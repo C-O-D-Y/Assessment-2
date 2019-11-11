@@ -84,16 +84,13 @@ public class HomePage {
 	 */
 	public void isPriceCorrect(String price, String exTax) {
 		WebUtility.clickElement(Locators.getLocators("loc.btn.productClickLink"));
-		System.out.println("UGYFUYRDTURF");
-
+	
 		String pricing = WebUtility.getText(Locators.getLocators("loc.text.productPrice"));
-		System.out.println("UKUFIUY");
+
 
 		Assert.assertEquals(pricing, "" + price, "price is not correct");
 		System.out.println("Assertion passed");
 		String taxes = WebUtility.getText(Locators.getLocators("loc.text.exTax"));
-		System.out.println(taxes);
-		System.out.println(exTax);
 		Assert.assertEquals(taxes, exTax, "price is not correct");
 		System.out.println("EXTAX is correct");
 	}

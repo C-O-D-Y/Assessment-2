@@ -11,13 +11,13 @@ import org.apache.poi.ss.usermodel.Row;
  */
 public class ProvideExcelData {
 
-	Object[][] object;
-	ExcelFileOperation provider;
+	Object[][] sheetData;
+	ExcelFileOperation excelOperation;
 
 	// Constructor provide loading of the file
 	// parameters filepath
 	public ProvideExcelData(String filepath, int sheetIndex) {
-		provider = new ExcelFileOperation(filepath, sheetIndex);
+		excelOperation = new ExcelFileOperation(filepath, sheetIndex);
 	}
 
 	/**
@@ -25,39 +25,36 @@ public class ProvideExcelData {
 	 */
 	public Object[][] provideExcelData() {
 
-		Iterator<Row> rows = null;
+		Iterator<Row> rowIterator = null;
 		try {
-			rows = provider.getRowsData();
+			rowIterator = excelOperation.getRowsData();
 
-			int noOfRows = provider.getNoOfRows();
+			int noOfRows = excelOperation.getNoOfRows();
 			System.out.println(noOfRows);
-			int noOfColumns = provider.getNoOfColumns();
+			int noOfColumns = excelOperation.getNoOfColumns();
 			System.out.println(noOfColumns);
-			object = new Object[noOfRows][noOfColumns];
+			sheetData = new Object[noOfRows-1][noOfColumns];
 
 		} catch (IOException e) {
 			System.out.println("Exception");
 		}
 		int i = 0;
-		rows.next();
+		rowIterator.next();
 
-		while (rows.hasNext()) {
-			Row row = rows.next();
-			Iterator<Cell> iterator = row.cellIterator();
+		while (rowIterator.hasNext()) {
+			Row row = rowIterator.next();
+			Iterator<Cell> cellIterator = row.cellIterator();
 			int j = 0;
-			while (iterator.hasNext()) {
-				Cell cell = iterator.next();
-				if (cell == null || cell.toString().equals(" ")) {
-				} else {
+			while (cellIterator.hasNext()) {
+				Cell cell = cellIterator.next();
 
-					object[i][j] = cell.toString();
-					System.out.println(cell);
-				}
+				sheetData[i][j] = cell.toString();
+				System.out.println(cell);
+
 				j++;
 			}
 			i++;
 		}
-
-		return object;
+		return sheetData;
 	}
 }

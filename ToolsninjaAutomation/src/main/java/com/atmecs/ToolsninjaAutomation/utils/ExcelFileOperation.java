@@ -18,20 +18,20 @@ import com.atmecs.ToolsninjaAutomation.constants.NullCellValueException;
  * In this Class i'm reading excel file using maven
  */
 public class ExcelFileOperation {
-	static FileInputStream fis = null;
+	static FileInputStream fileInputStream = null;
 	static XSSFWorkbook workbook = null;
 	static XSSFSheet worksheet = null;
 
 	public ExcelFileOperation(String filepath, int sheetIndex) {
 		try {
-			fis = new FileInputStream(new File(filepath));
+			fileInputStream = new FileInputStream(new File(filepath));
 		} catch (FileNotFoundException e) {
 			System.out.println("Sorry! File not Found.");
 			e.printStackTrace();
 		}
 		// Class used to read excel file and read the data
 		try {
-			workbook = new XSSFWorkbook(fis);
+			workbook = new XSSFWorkbook(fileInputStream);
 
 		} catch (IOException e) {
 			System.out.println("File path not found");

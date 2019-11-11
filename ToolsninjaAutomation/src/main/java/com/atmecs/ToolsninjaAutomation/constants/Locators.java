@@ -33,9 +33,4 @@ public class Locators {
 		String value = PageProperty.getProperty(key);
 		return value;
 	}
-
-//	public static void main(String[] args) {
-//		YatraFlightBookingLocators details = new YatraFlightBookingLocators();
-//		System.out.println(YatraFlightBookingLocators.getLocators("loc.btn.roundTrip"));
-//	}
 }

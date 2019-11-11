@@ -1,6 +1,5 @@
 C:\Users\saurabh.chauhan\Project-Assessment\ToolsninjaAutomation\src\main\java\com\atmecs\ToolsninjaAutomation\dataProvider\TestDataProvider.java
 C:\Users\saurabh.chauhan\Project-Assessment\ToolsninjaAutomation\src\main\java\com\atmecs\ToolsninjaAutomation\pages\HeatClinicPage.java
-C:\Users\saurabh.chauhan\Project-Assessment\ToolsninjaAutomation\src\main\java\com\atmecs\ToolsninjaAutomation\testflow\HomePageFlow.java
 C:\Users\saurabh.chauhan\Project-Assessment\ToolsninjaAutomation\src\main\java\com\atmecs\ToolsninjaAutomation\utils\ReadWebTables.java
 C:\Users\saurabh.chauhan\Project-Assessment\ToolsninjaAutomation\src\main\java\com\atmecs\ToolsninjaAutomation\helpers\Waits.java
 C:\Users\saurabh.chauhan\Project-Assessment\ToolsninjaAutomation\src\main\java\com\atmecs\ToolsninjaAutomation\constants\ValidatingData.java
@@ -8,6 +7,7 @@ C:\Users\saurabh.chauhan\Project-Assessment\ToolsninjaAutomation\src\main\java\c
 C:\Users\saurabh.chauhan\Project-Assessment\ToolsninjaAutomation\src\main\java\com\atmecs\ToolsninjaAutomation\constants\NullCellValueException.java
 C:\Users\saurabh.chauhan\Project-Assessment\ToolsninjaAutomation\src\main\java\com\atmecs\ToolsninjaAutomation\utils\ReadPropertiesFile.java
 C:\Users\saurabh.chauhan\Project-Assessment\ToolsninjaAutomation\src\main\java\com\atmecs\ToolsninjaAutomation\constants\MultipleElements.java
+C:\Users\saurabh.chauhan\Project-Assessment\ToolsninjaAutomation\src\main\java\com\atmecs\ToolsninjaAutomation\testflow\NinjaStorePageFlow.java
 C:\Users\saurabh.chauhan\Project-Assessment\ToolsninjaAutomation\src\main\java\com\atmecs\ToolsninjaAutomation\constants\Locators.java
 C:\Users\saurabh.chauhan\Project-Assessment\ToolsninjaAutomation\src\main\java\com\atmecs\ToolsninjaAutomation\utils\ExcelFileOperation.java
 C:\Users\saurabh.chauhan\Project-Assessment\ToolsninjaAutomation\src\main\java\com\atmecs\ToolsninjaAutomation\testflow\HeatClinicPageFlow.java

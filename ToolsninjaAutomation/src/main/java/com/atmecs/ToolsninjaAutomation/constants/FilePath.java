@@ -18,17 +18,16 @@ public class FilePath {
 	public final static String IE_PATH = LIB_HOME + "IEDriver.exe";
 
 	public final static String CONFIG_FILE = USER_HOME + File.separator + "config.properties";
-	public static final String LOCATOR_FILE = RESOURCES_HOME + "locators" + File.separator + "Locaters.properties";
-	public static final String VALIDATION_FILE = RESOURCES_HOME + "testData" + File.separator + "validation.properties";
-	public final static String TESTDATA_FILE = RESOURCES_HOME + "testData" + File.separator + "testinput.xlsx";
+	public static final String LOCATOR_FILE = RESOURCES_HOME + "locators" + File.separator
+			+ "heatClinicAndNinjaStoreLocators.properties";
+	public static final String VALIDATION_FILE = RESOURCES_HOME + "testData" + File.separator
+			+ "heatClinicAndNinjaStoreValidateData.properties";
+	public final static String TESTDATA_FILE = RESOURCES_HOME + "testData" + File.separator
+			+ "heatClinicAndNinjaStoreTestData.xlsx";
 
 	public static final String EXTENT_REPORT_FILE = USER_HOME + "test-output" + File.separator + "ExtentReport.html";
 	public static final String EXTENT_CONFIG = USER_HOME + "extent-config.xml";
 	public static final String FAILED_SCREENSHOT_FILE = USER_HOME + "FailedTestScreenShots" + File.separator;
 	public final static String LOG4J_FILE = RESOURCES_HOME + "log4j" + File.separator + "log4j.properties";
 	public final static int TIMEOUT_INSECONDS = 30;
-
-	public static void main(String[] args) {
-		System.out.println(EXTENT_CONFIG);
-	}
 }

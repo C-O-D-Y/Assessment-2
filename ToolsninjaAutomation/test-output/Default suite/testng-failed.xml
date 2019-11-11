@@ -3,17 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.atmecs.ToolsninjaAutomation.testScripts.HomePagetestscripts">
+      <class name="com.atmecs.ToolsninjaAutomation.testScripts.NinjaStoreTestScripts">
         <methods>
-          <include name="validateGrandTotal" invocation-numbers="0 2"/>
-          <include name="validateGrandTotalAfterRemovingItem"/>
           <include name="searchProductAndCheckAvailability" invocation-numbers="2"/>
-          <include name="checkGrandTotal"/>
+          <include name="validateGrandTotal" invocation-numbers="2"/>
           <include name="getUrl"/>
-          <include name="validateerrormessage" invocation-numbers="3"/>
+          <include name="validateErrorMessage" invocation-numbers="3"/>
           <include name="intitailizeBrowser"/>
+          <include name="tearResource"/>
         </methods>
-      </class> <!-- com.atmecs.ToolsninjaAutomation.testScripts.HomePagetestscripts -->
+      </class> <!-- com.atmecs.ToolsninjaAutomation.testScripts.NinjaStoreTestScripts -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

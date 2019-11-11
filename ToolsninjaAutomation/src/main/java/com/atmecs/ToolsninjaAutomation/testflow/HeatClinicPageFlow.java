@@ -1,8 +1,6 @@
 package com.atmecs.ToolsninjaAutomation.testflow;
 
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import com.atmecs.ToolsninjaAutomation.constants.Locators;
 import com.atmecs.ToolsninjaAutomation.helpers.Waits;

@@ -34,6 +34,7 @@ public class HeatClinicPage {
 		} else {
 			// WebUtility.explicitWait("//title");
 			String title = WebUtility.getTitle();
+			System.out.println(title);
 			Assert.assertEquals(title, actualtitle);
 			System.out.println("Redirection is on the correct page");
 		}

@@ -1,7 +1,6 @@
 package com.atmecs.ToolsninjaAutomation.dataProvider;
 
 import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
 
 import com.atmecs.ToolsninjaAutomation.constants.FilePath;
 import com.atmecs.ToolsninjaAutomation.utils.ProvideExcelData;
@@ -16,11 +15,13 @@ public class TestDataProvider {
 	 * returning to the calling method
 	 */
 
+	Object[][] sheetData;
+
 	@DataProvider(name = "products")
-	public Object[][] getHeader() {
+	public Object[][] getProducts() {
 		ProvideExcelData provideData = new ProvideExcelData(FilePath.TESTDATA_FILE, 0);
-		Object[][] getData = provideData.provideExcelData();
-		return getData;
+		sheetData = provideData.provideExcelData();
+		return sheetData;
 	}
 
 	/**
@@ -28,23 +29,23 @@ public class TestDataProvider {
 	 * array and returning to the calling method
 	 */
 	@DataProvider(name = "wrongProducts")
-	public Object[][] getOption1() {
+	public Object[][] getWrongProducts() {
 		ProvideExcelData provideData = new ProvideExcelData(FilePath.TESTDATA_FILE, 1);
-		Object[][] getData = provideData.provideExcelData();
-		return getData;
+		sheetData = provideData.provideExcelData();
+		return sheetData;
 	}
 
 	@DataProvider(name = "headers")
 	public Object[][] getheatClinicHeader() {
 		ProvideExcelData provideData = new ProvideExcelData(FilePath.TESTDATA_FILE, 2);
-		Object[][] getData = provideData.provideExcelData();
-		return getData;
+		sheetData = provideData.provideExcelData();
+		return sheetData;
 	}
 
 	@DataProvider(name = "cartDetails")
-	public Object[][] getcartDetails() {
+	public Object[][] getheatClinicCartDetails() {
 		ProvideExcelData provideData = new ProvideExcelData(FilePath.TESTDATA_FILE, 3);
-		Object[][] getData = provideData.provideExcelData();
-		return getData;
+		sheetData = provideData.provideExcelData();
+		return sheetData;
 	}
 }

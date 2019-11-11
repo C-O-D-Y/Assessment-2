@@ -14,7 +14,7 @@ import java.util.Properties;
 
 public class ReadPropertiesFile {
 	static Properties property;
-	static File file;
+	static File propertyFile;
 	static FileReader reader;
 
 	/**
@@ -27,8 +27,8 @@ public class ReadPropertiesFile {
 
 	public static Properties loadProperty(String pathName) throws IOException {
 		property = new Properties();
-		file = new File(pathName);
-		reader = new FileReader(file);
+		propertyFile = new File(pathName);
+		reader = new FileReader(propertyFile);
 		property.load(reader);
 		return property;
 	}

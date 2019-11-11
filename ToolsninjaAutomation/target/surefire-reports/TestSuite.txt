@@ -1,32 +1,22 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 26, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 85.386 s <<< FAILURE! - in TestSuite
-searchProductAndCheckAvailability(com.atmecs.ToolsninjaAutomation.testScripts.HomePagetestscripts)  Time elapsed: 0.008 s  <<< FAILURE!
-java.lang.NullPointerException
-	at com.atmecs.ToolsninjaAutomation.testScripts.HomePagetestscripts.searchProductAndCheckAvailability(HomePagetestscripts.java:57)
-
-validateGrandTotal(com.atmecs.ToolsninjaAutomation.testScripts.HomePagetestscripts)  Time elapsed: 7.524 s  <<< FAILURE!
-org.openqa.selenium.NoSuchElementException: 
-Unable to find element with xpath == (//div[@class='input-group btn-block']//input[@class='form-control'][1])[3]
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Tests run: 20, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 78.075 s <<< FAILURE! - in TestSuite
+validateGrandTotal(com.atmecs.ToolsninjaAutomation.testScripts.NinjaStoreTestScripts)  Time elapsed: 0.723 s  <<< FAILURE!
+org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: 
+Cannot click on element
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'ATMECSINLT-038', ip: '55.55.52.193', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.1'
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
 Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: , nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: dc951f47-2c9f-4918-a242-7b1d53162352
-*** Element info: {Using=xpath, value=(//div[@class='input-group btn-block']//input[@class='form-control'][1])[3]}
-	at com.atmecs.ToolsninjaAutomation.testScripts.HomePagetestscripts.validateGrandTotal(HomePagetestscripts.java:79)
+Session ID: e7fda686-1c3d-44e0-bf2c-86420b0dd1cc
+	at com.atmecs.ToolsninjaAutomation.testScripts.NinjaStoreTestScripts.validateGrandTotal(NinjaStoreTestScripts.java:80)
 
-validateerrormessage(com.atmecs.ToolsninjaAutomation.testScripts.HomePagetestscripts)  Time elapsed: 0.001 s  <<< FAILURE!
-java.lang.NullPointerException
-	at com.atmecs.ToolsninjaAutomation.testScripts.HomePagetestscripts.validateerrormessage(HomePagetestscripts.java:101)
+checkGrandTotal(com.atmecs.ToolsninjaAutomation.testScripts.NinjaStoreTestScripts)  Time elapsed: 0.164 s  <<< FAILURE!
+java.lang.AssertionError: grandtotal is not correct expected [$3,852.40] but found [$1,571.60]
+	at com.atmecs.ToolsninjaAutomation.testScripts.NinjaStoreTestScripts.checkGrandTotal(NinjaStoreTestScripts.java:88)
 
-validatefooterForServices(com.atmecs.ToolsninjaAutomation.testScripts.HeatClinicAutomation)  Time elapsed: 1.283 s  <<< FAILURE!
-java.lang.AssertionError: expected [Broadleaf Demo - Heat Clinic] but found []
-	at com.atmecs.ToolsninjaAutomation.testScripts.HeatClinicAutomation.validatefooterForServices(HeatClinicAutomation.java:46)
-
-validatefooterForServices(com.atmecs.ToolsninjaAutomation.testScripts.HeatClinicAutomation)  Time elapsed: 0.025 s  <<< FAILURE!
-java.lang.AssertionError: expected [null] but found [Broadleaf Commerce Demo Store - Heat Clinic - FAQ]
-	at com.atmecs.ToolsninjaAutomation.testScripts.HeatClinicAutomation.validatefooterForServices(HeatClinicAutomation.java:46)
+validateGrandTotalAfterRemovingItem(com.atmecs.ToolsninjaAutomation.testScripts.NinjaStoreTestScripts)  Time elapsed: 3.055 s  <<< FAILURE!
+java.lang.AssertionError: grandtotal is not correct expected [$3,606.00] but found [$1,202.00]
+	at com.atmecs.ToolsninjaAutomation.testScripts.NinjaStoreTestScripts.validateGrandTotalAfterRemovingItem(NinjaStoreTestScripts.java:95)
 

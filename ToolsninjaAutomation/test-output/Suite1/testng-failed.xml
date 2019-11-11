@@ -5,10 +5,8 @@
     <classes>
       <class name="com.atmecs.ToolsninjaAutomation.testScripts.HomePagetestscripts">
         <methods>
-          <include name="validateGrandTotal" invocation-numbers="0 2"/>
-          <include name="validateGrandTotalAfterRemovingItem"/>
+          <include name="validateGrandTotal" invocation-numbers="2"/>
           <include name="searchProductAndCheckAvailability" invocation-numbers="2"/>
-          <include name="checkGrandTotal"/>
           <include name="getUrl"/>
           <include name="validateerrormessage" invocation-numbers="3"/>
           <include name="intitailizeBrowser"/>
