@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="13" passed="7" failed="6" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2019-11-11T11:33:09Z" name="Default suite" finished-at="2019-11-11T11:33:45Z" duration-ms="35870">
+    <groups>
+    </groups>
+    <test started-at="2019-11-11T11:33:09Z" name="Default test" finished-at="2019-11-11T11:33:45Z" duration-ms="35870">
+      <class name="com.atmecs.ToolsninjaAutomation.testScripts.HomePagetestscripts">
+        <test-method is-config="true" signature="intitailizeBrowser()[pri:0, instance:com.atmecs.ToolsninjaAutomation.testScripts.HomePagetestscripts@dbf57b3]" started-at="2019-11-11T11:33:09Z" name="intitailizeBrowser" finished-at="2019-11-11T11:33:13Z" duration-ms="3852" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- intitailizeBrowser -->
+        <test-method is-config="true" signature="getUrl()[pri:0, instance:com.atmecs.ToolsninjaAutomation.testScripts.HomePagetestscripts@dbf57b3]" started-at="2019-11-11T11:33:13Z" name="getUrl" finished-at="2019-11-11T11:33:14Z" duration-ms="1199" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUrl -->
+        <test-method signature="homePageRedirection()[pri:1, instance:com.atmecs.ToolsninjaAutomation.testScripts.HomePagetestscripts@dbf57b3]" started-at="2019-11-11T11:33:14Z" name="homePageRedirection" finished-at="2019-11-11T11:33:14Z" duration-ms="43" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePageRedirection -->
+        <test-method signature="searchProductAndCheckAvailability(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.atmecs.ToolsninjaAutomation.testScripts.HomePagetestscripts@dbf57b3]" started-at="2019-11-11T11:33:15Z" name="searchProductAndCheckAvailability" data-provider="products" finished-at="2019-11-11T11:33:22Z" duration-ms="7172" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MacBook Air]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[$1,202.00]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2.0]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Ex Tax: $1,000.00]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchProductAndCheckAvailability -->
+        <test-method signature="searchProductAndCheckAvailability(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.atmecs.ToolsninjaAutomation.testScripts.HomePagetestscripts@dbf57b3]" started-at="2019-11-11T11:33:22Z" name="searchProductAndCheckAvailability" data-provider="products" finished-at="2019-11-11T11:33:29Z" duration-ms="7011" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[iPhone]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[$123.20]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[3.0]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Ex Tax: $101.00]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchProductAndCheckAvailability -->
+        <test-method signature="searchProductAndCheckAvailability(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.atmecs.ToolsninjaAutomation.testScripts.HomePagetestscripts@dbf57b3]" started-at="2019-11-11T11:33:29Z" name="searchProductAndCheckAvailability" data-provider="products" finished-at="2019-11-11T11:33:29Z" duration-ms="2" status="FAIL">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+            <param index="2">
+              <value is-null="true"/>
+            </param>
+            <param index="3">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.atmecs.ToolsninjaAutomation.testflow.HomePageFlow.searchProduct(HomePageFlow.java:27)
+at com.atmecs.ToolsninjaAutomation.testScripts.HomePagetestscripts.searchProductAndCheckAvailability(HomePagetestscripts.java:57)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchProductAndCheckAvailability -->
+        <test-method signature="validateGrandTotal(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.atmecs.ToolsninjaAutomation.testScripts.HomePagetestscripts@dbf57b3]" started-at="2019-11-11T11:33:29Z" name="validateGrandTotal" data-provider="products" finished-at="2019-11-11T11:33:30Z" duration-ms="680" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MacBook Air]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[$1,202.00]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2.0]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Ex Tax: $1,000.00]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.interactions.MoveTargetOutOfBoundsException">
+            <message>
+              <![CDATA[Cannot click on element
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ATMECSINLT-038', ip: '55.55.52.193', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.1'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: , nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: fa73ae27-b257-46eb-b54d-fbb213c55194]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: Cannot click on element
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ATMECSINLT-038', ip: '55.55.52.193', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.1'
+Driver info: org.openqa.selenium.ie.InternetExplorerDriver
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: , nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: fa73ae27-b257-46eb-b54d-fbb213c55194
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at com.atmecs.ToolsninjaAutomation.helpers.WebUtility$1.apply(WebUtility.java:129)
+at com.atmecs.ToolsninjaAutomation.helpers.WebUtility$1.apply(WebUtility.java:126)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+at com.atmecs.ToolsninjaAutomation.helpers.WebUtility.clickElement(WebUtility.java:126)
+at com.atmecs.ToolsninjaAutomation.testflow.HomePageFlow.manipulateQuantity(HomePageFlow.java:53)
+at com.atmecs.ToolsninjaAutomation.testScripts.HomePagetestscripts.validateGrandTotal(HomePagetestscripts.java:79)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.interactions.MoveTargetOutOfBoundsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateGrandTotal -->
+        <test-method signature="validateGrandTotal(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.atmecs.ToolsninjaAutomation.testScripts.HomePagetestscripts@dbf57b3]" started-at="2019-11-11T11:33:30Z" name="validateGrandTotal" data-provider="products" finished-at="2019-11-11T11:33:34Z" duration-ms="3997" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[iPhone]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[$123.20]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[3.0]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Ex Tax: $101.00]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateGrandTotal -->
+        <test-method signature="validateGrandTotal(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.atmecs.ToolsninjaAutomation.testScripts.HomePagetestscripts@dbf57b3]" started-at="2019-11-11T11:33:34Z" name="validateGrandTotal" data-provider="products" finished-at="2019-11-11T11:33:36Z" duration-ms="1806" status="FAIL">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+            <param index="2">
+              <value is-null="true"/>
+            </param>
+            <param index="3">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Keys to send should be a not null CharSequence]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
+at com.atmecs.ToolsninjaAutomation.helpers.WebUtility$3.apply(WebUtility.java:172)
+at com.atmecs.ToolsninjaAutomation.helpers.WebUtility$3.apply(WebUtility.java:169)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+at com.atmecs.ToolsninjaAutomation.helpers.WebUtility.clickAndSendText(WebUtility.java:169)
+at com.atmecs.ToolsninjaAutomation.testflow.HomePageFlow.manipulateQuantity(HomePageFlow.java:56)
+at com.atmecs.ToolsninjaAutomation.testScripts.HomePagetestscripts.validateGrandTotal(HomePagetestscripts.java:79)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateGrandTotal -->
+        <test-method signature="checkGrandTotal()[pri:4, instance:com.atmecs.ToolsninjaAutomation.testScripts.HomePagetestscripts@dbf57b3]" started-at="2019-11-11T11:33:36Z" name="checkGrandTotal" finished-at="2019-11-11T11:33:36Z" duration-ms="169" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[grandtotal is not correct expected [$3,852.40] but found [$1,571.60]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: grandtotal is not correct expected [$3,852.40] but found [$1,571.60]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at com.atmecs.ToolsninjaAutomation.pages.HomePage.isGrandTotalCorrect(HomePage.java:108)
+at com.atmecs.ToolsninjaAutomation.testScripts.HomePagetestscripts.checkGrandTotal(HomePagetestscripts.java:87)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkGrandTotal -->
+        <test-method signature="validateGrandTotalAfterRemovingItem()[pri:5, instance:com.atmecs.ToolsninjaAutomation.testScripts.HomePagetestscripts@dbf57b3]" started-at="2019-11-11T11:33:36Z" name="validateGrandTotalAfterRemovingItem" finished-at="2019-11-11T11:33:39Z" duration-ms="2762" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[grandtotal is not correct expected [$3,606.00] but found [$1,202.00]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: grandtotal is not correct expected [$3,606.00] but found [$1,202.00]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at com.atmecs.ToolsninjaAutomation.pages.HomePage.isGrandTotalCorrect(HomePage.java:108)
+at com.atmecs.ToolsninjaAutomation.testScripts.HomePagetestscripts.validateGrandTotalAfterRemovingItem(HomePagetestscripts.java:94)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateGrandTotalAfterRemovingItem -->
+        <test-method signature="validateerrormessage(java.lang.String, java.lang.String)[pri:6, instance:com.atmecs.ToolsninjaAutomation.testScripts.HomePagetestscripts@dbf57b3]" started-at="2019-11-11T11:33:39Z" name="validateerrormessage" data-provider="wrongProducts" finished-at="2019-11-11T11:33:41Z" duration-ms="1997" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sdf]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Your shopping cart is empty!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateerrormessage -->
+        <test-method signature="validateerrormessage(java.lang.String, java.lang.String)[pri:6, instance:com.atmecs.ToolsninjaAutomation.testScripts.HomePagetestscripts@dbf57b3]" started-at="2019-11-11T11:33:41Z" name="validateerrormessage" data-provider="wrongProducts" finished-at="2019-11-11T11:33:43Z" duration-ms="2021" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sugcg]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Your shopping cart is empty!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateerrormessage -->
+        <test-method signature="validateerrormessage(java.lang.String, java.lang.String)[pri:6, instance:com.atmecs.ToolsninjaAutomation.testScripts.HomePagetestscripts@dbf57b3]" started-at="2019-11-11T11:33:43Z" name="validateerrormessage" data-provider="wrongProducts" finished-at="2019-11-11T11:33:45Z" duration-ms="1981" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[cody]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Your shopping cart is empty!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateerrormessage -->
+        <test-method signature="validateerrormessage(java.lang.String, java.lang.String)[pri:6, instance:com.atmecs.ToolsninjaAutomation.testScripts.HomePagetestscripts@dbf57b3]" started-at="2019-11-11T11:33:45Z" name="validateerrormessage" data-provider="wrongProducts" finished-at="2019-11-11T11:33:45Z" duration-ms="1" status="FAIL">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.atmecs.ToolsninjaAutomation.testflow.HomePageFlow.searchProduct(HomePageFlow.java:27)
+at com.atmecs.ToolsninjaAutomation.testScripts.HomePagetestscripts.validateerrormessage(HomePagetestscripts.java:101)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateerrormessage -->
+      </class> <!-- com.atmecs.ToolsninjaAutomation.testScripts.HomePagetestscripts -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
